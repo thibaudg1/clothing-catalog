@@ -31,12 +31,22 @@ struct ProductCellView: View {
                             .offset(x: -5, y: -5)
                     }
                 
+                if #available(iOS 16.0, *) {
                     Text(product.title)
                         .font(.body)
                         .foregroundColor(Color.primary)
                         .lineLimit(3, reservesSpace: true)
                         .multilineTextAlignment(.leading)
                         .padding()
+                } else {
+                    // Fallback on earlier versions
+                    Text(product.title)
+                        .font(.body)
+                        .foregroundColor(Color.primary)
+                        .lineLimit(3)
+                        .multilineTextAlignment(.leading)
+                        .padding()
+                }
             }
             .clipShape(RoundedRectangle(cornerRadius: 6))
             .overlay(RoundedRectangle(cornerRadius: 6).stroke(.lightGray, lineWidth: 0.3))
