@@ -17,6 +17,7 @@
 		6CAEA9312A66A42C002442A8 /* Sequences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CAEA92E2A66A42C002442A8 /* Sequences.swift */; };
 		6CAEA9322A66A42C002442A8 /* jsonDebugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CAEA92F2A66A42C002442A8 /* jsonDebugging.swift */; };
 		6CAEA9332A66A42C002442A8 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CAEA9302A66A42C002442A8 /* Colors.swift */; };
+		6CAEA9362A66A533002442A8 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CAEA9352A66A533002442A8 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		6CAEA92E2A66A42C002442A8 /* Sequences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sequences.swift; sourceTree = "<group>"; };
 		6CAEA92F2A66A42C002442A8 /* jsonDebugging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = jsonDebugging.swift; sourceTree = "<group>"; };
 		6CAEA9302A66A42C002442A8 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		6CAEA9352A66A533002442A8 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				6CAEA91A2A66968F002442A8 /* ContentView.swift */,
 				6CAEA9262A66A340002442A8 /* Models */,
 				6CAEA92D2A66A42C002442A8 /* Helpers */,
+				6CAEA9342A66A533002442A8 /* Network */,
 				6CAEA91C2A669691002442A8 /* Assets.xcassets */,
 				6CAEA91E2A669691002442A8 /* Preview Content */,
 			);
@@ -99,6 +102,14 @@
 				6CAEA9302A66A42C002442A8 /* Colors.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		6CAEA9342A66A533002442A8 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				6CAEA9352A66A533002442A8 /* NetworkManager.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,6 +182,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CAEA9362A66A533002442A8 /* NetworkManager.swift in Sources */,
 				6CAEA9322A66A42C002442A8 /* jsonDebugging.swift in Sources */,
 				6CAEA9332A66A42C002442A8 /* Colors.swift in Sources */,
 				6CAEA91B2A66968F002442A8 /* ContentView.swift in Sources */,
