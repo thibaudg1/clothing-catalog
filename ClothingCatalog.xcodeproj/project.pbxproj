@@ -24,6 +24,7 @@
 		6CAEA9462A66A586002442A8 /* ProductsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CAEA93F2A66A586002442A8 /* ProductsView.swift */; };
 		6CAEA9472A66A586002442A8 /* ProductCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CAEA9402A66A586002442A8 /* ProductCellView.swift */; };
 		6CAEA9482A66A586002442A8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CAEA9412A66A586002442A8 /* ContentView.swift */; };
+		6CAEA94B2A66A66C002442A8 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 6CAEA94A2A66A66C002442A8 /* SDWebImageSwiftUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CAEA94B2A66A66C002442A8 /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,6 +180,9 @@
 			dependencies = (
 			);
 			name = ClothingCatalog;
+			packageProductDependencies = (
+				6CAEA94A2A66A66C002442A8 /* SDWebImageSwiftUI */,
+			);
 			productName = ClothingCatalog;
 			productReference = 6CAEA9152A66968F002442A8 /* ClothingCatalog.app */;
 			productType = "com.apple.product-type.application";
@@ -206,6 +211,9 @@
 				Base,
 			);
 			mainGroup = 6CAEA90C2A66968F002442A8;
+			packageReferences = (
+				6CAEA9492A66A66C002442A8 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = 6CAEA9162A66968F002442A8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -445,6 +453,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6CAEA9492A66A66C002442A8 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6CAEA94A2A66A66C002442A8 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6CAEA9492A66A66C002442A8 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6CAEA90D2A66968F002442A8 /* Project object */;
 }
