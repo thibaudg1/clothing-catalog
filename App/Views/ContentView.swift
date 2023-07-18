@@ -17,7 +17,7 @@ struct ContentView: View {
                         Text("Nothing to show here.")
                     }
                 }
-                .navigationTitle("Printful Catalog")
+                .navigationTitle("Clothing Catalog")
         }
         .task(loadCategories)
     }
